@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route index element={<HomePage streamList={streamList} />} />
+        <Route path="/" element={<HomePage streamList={streamList} />} />
         <Route path="/live/:userName" element={<StreamRoom />} />
       </Routes>
     </>
